@@ -7,6 +7,9 @@ const PATHS = {
 };
 
 module.exports = {
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   entry: './client/app.js',
   output: {
     path: path.join(__dirname, 'public'),

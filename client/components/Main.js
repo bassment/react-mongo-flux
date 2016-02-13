@@ -1,5 +1,5 @@
 import React from 'react';
-import API from '../api.js';
+import API from '../api/api';
 import LinkStore from '../stores/LinkStore';
 
 const _getAppState = () => {
@@ -21,7 +21,6 @@ export default class Main extends React.Component {
     LinkStore.removeListener('change', this.onChange);
   }
   onChange() {
-    console.log('4. From the View');
     this.setState(_getAppState());
   }
   render() {
